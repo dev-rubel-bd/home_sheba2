@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Navigation Section */
+
+/* Main Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 40px auto;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 140, 247),
+    rgb(108, 20, 135)
+  );
+  width: 90%;
+}
+
+.form {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+  height: auto;
+  border: solid rgb(71, 71, 71);
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 30px;
+}
+.form h2 {
+  color: #946cf0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-group input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.form-group label {
+  line-height: 20px;
+}
+
+button[type="submit"] {
+  background-color: #946cf0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ef4cd1;
+  transform: scale(1.05);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    text-align: center;
+    gap: 5px;
+  }
+
+  nav img {
+    width: 50px;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="email"] {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .links {
+    flex-direction: column;
+  }
+}

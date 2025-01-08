@@ -1,0 +1,426 @@
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<      Common style     >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+span {
+  color: rgb(209, 123, 255);
+}
+hr {
+  margin-top: 80px;
+}
+
+/* ...................Nav section stle....................*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav img {
+  width: 70px;
+}
+
+nav ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 20px;
+  gap: 10px;
+}
+
+.nav-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  background-color: rgb(125, 116, 252);
+  color: aliceblue;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.left-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.right-nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+.right-nav a:hover {
+  color: rgb(13, 111, 196);
+  transform: scale(1.2);
+}
+
+/* ............................hero section................................. */
+.hero {
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  background: #1f7cbf;
+  height: 600px;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 140, 247),
+    rgb(108, 20, 135)
+  );
+}
+
+.hero-element {
+  display: inline-block;
+  text-align: center;
+}
+
+.hero-img {
+  height: 180px;
+  width: 160px;
+  border-radius: 40%;
+  opacity: 50%;
+}
+
+.hero-all-img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+  gap: 20px; /* Space between images */
+}
+
+.search-input {
+  background-color: rgb(232, 215, 249);
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  height: 40px;
+  width: 400px;
+  font-size: 18px;
+}
+
+.search-button {
+  height: 50px;
+  width: 70px;
+  background: rgb(99, 133, 246);
+  color: antiquewhite;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hero h2 {
+  color: antiquewhite;
+  font-size: 40px;
+}
+
+/*........................... Service Categories .......................................*/
+
+.service-categories {
+  text-align: center;
+  margin: 0px;
+}
+
+.service-categories h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.category {
+  margin: 10px;
+  text-align: center;
+}
+
+.category img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.category p {
+  font-size: 18px;
+}
+
+/* .................................Testimonials .......................*/
+.testimonials_header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  justify-items: center;
+  text-align: center;
+  margin-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  height: 140px;
+  width: 550px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(45, 139, 247, 0.099),
+    rgba(108, 20, 135, 0.114)
+  );
+}
+
+.testimonial h5 {
+  font-weight: bold;
+}
+
+/*............................... Call to Action.......................... */
+.cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: rgb(125, 116, 252);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #007bff;
+}
+
+/* ............................................  Footer .........................*/
+footer {
+  background-color: rgba(45, 139, 247, 0.315);
+  height: 200px;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.link ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  display: inline;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.link ul li a:hover {
+  color: #007bff;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content .social-links a {
+  margin-left: 10px;
+}
+
+.footer-content .social-links img {
+  width: 30px;
+  height: 30px;
+}
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Tab Responsive styles  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* ...................Nav section stlye....................*/
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-logo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-logo img {
+    width: 50px;
+  }
+
+  .left-nav,
+  .right-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-service {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-service h4 {
+    text-align: center;
+  }
+
+  .left-nav a,
+  .right-nav a {
+    font-size: 16px;
+  }
+
+  .right-nav {
+    gap: 10px;
+  }
+}
+
+/* ..............hero section ....................*/
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto; /* Allow the hero section to adjust based on content */
+    padding: 20px;
+  }
+
+  .hero-all-img {
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-img {
+    height: 150px;
+    width: 130px; /* Reduce size of images on smaller screens */
+  }
+
+  .search-input {
+    width: 80%; /* Make the search input take up most of the width */
+  }
+
+  .search-button {
+    width: 90px; /* Make the search button larger for easier clicking */
+  }
+
+  .hero h2 {
+    font-size: 28px; /* Adjust the heading size for smaller screens */
+  }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Mobile Resposive >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* ............................nav section........................ */
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 15px;
+  }
+
+  .nav-logo {
+    gap: 10px;
+  }
+
+  .nav-logo img {
+    width: 40px;
+  }
+
+  .left-nav,
+  .right-nav {
+    gap: 5px;
+  }
+
+  .left-nav a,
+  .right-nav a {
+    font-size: 14px;
+  }
+
+  .user {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+
+/*.......................      Hero section   .............................*/
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 10px;
+    height: auto; /* Adjust height based on content */
+  }
+
+  .hero-all-img {
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-img {
+    height: 120px;
+    width: 100px; /* Reduce image size further for very small screens */
+  }
+
+  .search-input {
+    width: 100%; /* Make the search input take full width */
+    font-size: 16px; /* Reduce font size for small screens */
+  }
+
+  .search-button {
+    width: 100px; /* Adjust the button width */
+  }
+
+  .hero h2 {
+    font-size: 24px; /* Make the heading smaller */
+  }
+}
