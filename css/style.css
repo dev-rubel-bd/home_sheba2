@@ -48,7 +48,11 @@ nav ul {
   padding: 7px;
   border-radius: 8px;
 }
-
+.user:hover {
+  background: #de4bf2;
+  color: azure;
+  transform: scale(1.05);
+}
 .left-nav {
   display: flex;
   gap: 50px;
@@ -72,9 +76,48 @@ nav a:hover {
 }
 
 .right-nav a:hover {
-  color: rgb(13, 111, 196);
+  color: #007bff;
   transform: scale(1.2);
 }
+
+
+
+
+.right-nav3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 7px; 
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.my-profile-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.my-profile-link:hover {
+  color: #007bff; /* Optional: Add hover effect */
+}
+
 
 /* ............................hero section................................. */
 .hero {
