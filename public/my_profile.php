@@ -41,8 +41,19 @@ $conn->close();
 
 <link rel="stylesheet" href="../css/other_style.css"> 
 
+
+
 <div class="mYprofile-container">
-    <div><h1>My Profile</h1></div>
+
+    <div class="myprofile_flex">
+        <h1>My Profile</h1>
+        <div class="myprofile_close">
+            <a href="<?php echo ($user_role === 'service_provider') ? '../service_provider/dashboard.php' : '../service_holder/dashboard.php'; ?>" class="myprofile_close-btn">
+                Close
+            </a>
+        </div>
+    </div>
+
     <div class="mYprofile-card">
         <div class="mYprofile-picture">
             <img src="<?php echo htmlspecialchars($profile_picture ?: 'default-profile.png'); ?>" alt="Profile Picture">
@@ -60,6 +71,7 @@ $conn->close();
     </div>
 </div>
 
+
 <!-- Logout Modal -->
 <div id="logout-modal" class="modal">
     <div class="modal-content">
@@ -73,3 +85,6 @@ $conn->close();
 </div>
 
 <script src="../js/modal.js"></script>
+
+
+

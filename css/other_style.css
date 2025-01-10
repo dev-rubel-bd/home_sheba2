@@ -55,10 +55,30 @@ body {
   border-radius: 5px;
 }
 .mYprofile-actions a:hover {
-
   background: #ee00ff;
-
 }
+
+.myprofile_close a {
+  background-color:rgb(215, 215, 215);
+    border: 2px solid rgba(91, 3, 255, 0.559);
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color:#007bff;
+    cursor: pointer;
+  }
+  
+  .myprofile_close a:hover {
+    color: #f44336; /* Red color on hover */
+  }
+  .myprofile_flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
 
 
 

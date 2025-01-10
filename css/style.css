@@ -100,22 +100,34 @@ nav a:hover {
 }
 
 .profile-picture {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ddd;
 }
 
 .my-profile-link {
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
-  color: #333;
+  color: #4d2aea;
   font-weight: bold;
 }
 
 .my-profile-link:hover {
-  color: #007bff; /* Optional: Add hover effect */
+  color: #f700ff; /* Optional: Add hover effect */
+}
+
+.my_name{
+  margin: 0px;
+  color: #141414;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.right_text{
+  display: grid;
+  justify-items: center;
 }
 
 
